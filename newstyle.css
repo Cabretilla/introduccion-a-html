@@ -1,0 +1,28 @@
+*{
+    font-family: Verdana, Tahoma, sans-serif;
+    --color-primary: aquamarine;
+    --color-secondary: #ff69b4;
+    --color-buttons: red;
+    text-align: center;
+}
+a{
+    display: block;
+}
+div {
+    width: 25%;
+    padding: 10px;
+    border: 5px solid var(--color-buttons);
+    margin: 0;
+  }
+.grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "section section"
+    "aside aside"
+    "footer footer";
+    grid-template-columns: auto;
+    margin: auto;
+}
